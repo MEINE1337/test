@@ -30,7 +30,6 @@ func ConvertNumber(n int) []int {
 		fmt.Println(a[i])
 	}
 	fmt.Println(a)
-	// ReverseMatrix(a) - хотел сослаться на функцию, которая будет отдельно переворачивать матрицу, но не получилось
 	newMatrix := make([]int, 0, len(a))
 	for i := len(a) - 1; i >= 0; i-- {
 		newMatrix = append(newMatrix, a[i])
@@ -40,22 +39,3 @@ func ConvertNumber(n int) []int {
 	fmt.Println(code)
 	return code
 }
-
-/* func ReverseMatrix(a [11]int) []int {
-	var code [3]int
-	newMatrix := make([]int, 0, len(a))
-	for i := len(a) - 1; i >= 0; i-- {
-		newMatrix = append(newMatrix, a[i])
-	}
-	fmt.Println(newMatrix)
-	code := newMatrix[1:4]
-	fmt.Println(code)
-	return code
-}
-
-func ShowCode(newMatrix [11]int) []int {
-	code := newMatrix[1:4]
-	fmt.Println(code)
-	return code
-}
-*/
